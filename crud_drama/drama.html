@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../crud_drama/drama.css" />
+    <title>CRUD: DRAMA</title>
+  </head>
+  <body>
+    <h1>CRUD: DRAMA</h1>
+    <form>
+      <input id="drama_id" type="text" placeholder="id" disabled />
+      <input id="drama_title" type="text" placeholder="Title" />
+      <input id="drama_genre" type="text" placeholder="Genre" />
+      <input id="drama_episode" type="text" placeholder="Episode" />
+      <input id="drama_director" type="text" placeholder="Director" />
+      <input id="release_year" type="text" placeholder="Release year" />
+      <button type="button" onclick="insertDrama()">Insert</button>
+      <button type="button" onclick="updateDrama()">Update</button>
+    </form>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Title</th>
+          <th>Genre</th>
+          <th>Episode</th>
+          <th>Director</th>
+          <th>Release Year</th>
+          <th>Edit</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody id="container"></tbody>
+    </table>
+    <script src="../crud_drama/drama.js"></script>
+  </body>
+</html>

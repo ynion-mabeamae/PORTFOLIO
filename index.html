@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ynion, Ma. Bea Mae Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./images/CN.png" type="image/png" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-intro">
+        <h1>
+          Hi! there, I'm
+          <span class="full-name">Ynion, Ma. Bea Mae</span>
+          <span class="header-welcome">Welcome to my website!</span>
+        </h1>
+      </div>
+      <img src="./images/bae.jpg" alt="Bea" />
+    </div>
+    <div class="interest">
+      <h2>My interest and hobbies</h2>
+      <div class="interest-content">
+        <ul>
+          <li>Listening to Music</li>
+          <li>Watching Drama</li>
+          <li>Reading Article</li>
+          <li>Playing Puzzle & Guitar</li>
+          <li>Dancing</li>
+        </ul>
+      </div>
+    </div>
+    <div class="my-works">
+      <h2>My works</h2>
+      <ol> 
+        <li>
+          <a href="./crud_drama/drama.html" target="_blank">
+            CRUD: DRAMA
+          </a>
+        </li>
+        <li>
+          <a href="./countries/countries.html" target="_blank">
+            Countries of the World
+          </a>
+        </li>
+        <li>
+          <a href="./works/work_a.html" target="_blank">
+            CRUD: File Handling COBOL
+          </a>
+        </li>
+        <li>
+          <a href="./works/work_b.html" target="_blank"> Playground </a>
+        </li>
+        <li>
+          <a href="./works/work_c.html" target="_blank"> Boxed-In Games </a>
+        </li>
+        <li>
+          <a href="./works/work_d.html" target="_blank"> Portfolio </a>
+        </li>
+        <li>
+          <a href="./works/work_e.html" target="_blank"> Powershell GUI </a>
+        </li>
+      </ol>
+    </div>
+    <div class="testimonials">
+      <h2>Testimonials</h2>
+      <p>
+        Your quick thinking and creativity makes the work in web developing much
+        faster, you are a team player. -Matthew
+      </p>
+      <p>
+        Ma. Bea Mae Ynion is a hardworking student. I like her creativity and
+        ideas with projects. With this website, I hope to know better about her
+        and to collaborate with projects soon! - Justine
+      </p>
+      <p>
+        Your positive attitude during those late-night debugging sessions was a
+        lifesaver! You kept the team motivated, and we got through it. - Pat
+      </p>
+    </div>
+    <div class="my-picture">
+      <h2>Gallery</h2>
+      <div class="photos">
+        <img src="./images/arashi.png" alt="Arashi" />
+        <img src="./images/crush.jpg" alt="2ne1" />
+        <img src="./images/jisu.jpg" alt="Jisoo" />
+        <img src="./images/blackpink.png" alt="Blackpink" />
+        <img src="./images/LP.jpg" alt="Lighter and Princess" />
+        <img src="./images/babymonster.jpg" alt="Babymonster" />
+      </div>
+    </div>
+    <div class="text-info">
+      <h2>Contact Me</h2>
+      <div class="contact-form">
+        <form class="form-container">
+          <div class="form-grid">
+            <div>
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" />
+            </div>
+          </div>
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" cols="30" rows="10">
+            </textarea>
+          </div>
+          <div class="checkbox-container">
+            <input type="checkbox" id="send_copy" />
+            <label for="send_copy">Send me a copy</label>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+    <section class="my-goals">
+      <h2>My Goals</h2>
+      <ul>
+        <li>To get a job</li>
+        <li>Improve my skills</li>
+        <li>Become successful</li>
+        <li>Build my own house</li>
+        <li>Attend a concert</li>
+      </ul>
+      <div class="comment-info">
+        <h2>Comment Section</h2>
+        <div class="sort-container">
+          <select id="sort_type" onchange="sortComments()">
+            <option value="newest">Newest</option>
+            <option value="oldest">Oldest</option>
+          </select>
+        </div>
+        <div class="comment-container" id="comment">
+          <div class="upper-tags">
+            <div class="user-tag"><strong>Arroyo</strong></div>
+            <div class="user-comment">
+              It is a great goal to achieve! Work well.
+            </div>
+          </div>
+          <div class="upper-tags">
+            <div class="user-tag"><strong>Delima</strong></div>
+            <div class="user-comment">I hope you achieve your goals!</div>
+          </div>
+          <div class="upper-tags">
+            <div class="user-tag"><strong>˚ʚ♡ɞ˚Pat</strong></div>
+            <div class="user-comment">𐙚⋆°｡⋆ You're making great progress!</div>
+          </div>
+        </div>
+        <h3>Add a comment</h3>
+        <form class="comment-form">
+          <div>
+            <label for="comment_name">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="comment_name"
+              oninput="validateComment()"
+            />
+          </div>
+          <div>
+            <label for="comment_text">Comment</label>
+            <textarea
+              name="comment"
+              id="comment_text"
+              rows="10"
+              cols="50"
+              placeholder="Type your comment here..."
+              oninput="validateComment()"
+            ></textarea>
+          </div>
+          <button
+            id="comment_button"
+            type="button"
+            onclick="addComment()"
+            disabled
+          >
+            Comment
+          </button>
+        </form>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
