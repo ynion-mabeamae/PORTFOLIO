@@ -3,190 +3,390 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ynion, Ma. Bea Mae Page</title>
+    <title>Ynion, Ma. Bea Mae | Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="./images/CN.png" type="image/png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class="header">
-      <div class="header-intro">
-        <h1>
-          Hi! there, I'm
-          <span class="full-name">Ynion, Ma. Bea Mae</span>
-          <span class="header-welcome">Welcome to my website!</span>
-        </h1>
-      </div>
-      <img src="./images/bae.jpg" alt="Bea" />
-    </div>
-    <div class="interest">
-      <h2>My interest and hobbies</h2>
-      <div class="interest-content">
-        <ul>
-          <li>Listening to Music</li>
-          <li>Watching Drama</li>
-          <li>Reading Article</li>
-          <li>Playing Puzzle & Guitar</li>
-          <li>Dancing</li>
+    <!-- Navbar Start -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <span class="logo-text">baexoxyn</span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#about"><i class="fas fa-user"></i> About Me</a></li>
+          <li><a href="#interest"><i class="fas fa-heart"></i> Interests</a></li>
+          <li><a href="#my_works"><i class="fas fa-briefcase"></i> Works</a></li>
+          <li><a href="#testimonials"><i class="fas fa-quote-left"></i> Testimonials</a></li>
+          <li><a href="#gallery"><i class="fas fa-images"></i> Gallery</a></li>
+          <li><a href="#contact_me"><i class="fas fa-envelope"></i> Contact</a></li>
+          <li><a href="#my_goals"><i class="fas fa-bullseye"></i> Goals</a></li>
         </ul>
+        <div class="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
       </div>
-    </div>
-    <div class="my-works">
-      <h2>My works</h2>
-      <ol> 
-        <li>
-          <a href="heybleepi.com" target="_blank">
-             Heybleepi
-          </a>
-        </li>
-        <li>
-          <a href="./crud_drama/drama.html" target="_blank">
-            CRUD: DRAMA
-          </a>
-        </li>
-        <li>
-          <a href="./countries/countries.html" target="_blank">
-            Countries of the World
-          </a>
-        </li>
-        <li>
-          <a href="./works/work_a.html" target="_blank">
-            CRUD: File Handling COBOL
-          </a>
-        </li>
-        <li>
-          <a href="./works/work_b.html" target="_blank"> Playground </a>
-        </li>
-        <li>
-          <a href="./works/work_c.html" target="_blank"> Boxed-In Games </a>
-        </li>
-        <li>
-          <a href="./works/work_d.html" target="_blank"> Portfolio </a>
-        </li>
-        <li>
-          <a href="./works/work_e.html" target="_blank"> Powershell GUI </a>
-        </li>
-      </ol>
-    </div>
-    <div class="testimonials">
-      <h2>Testimonials</h2>
-      <p>
-        Your quick thinking and creativity makes the work in web developing much
-        faster, you are a team player. -Matthew
-      </p>
-      <p>
-        Ma. Bea Mae Ynion is a hardworking student. I like her creativity and
-        ideas with projects. With this website, I hope to know better about her
-        and to collaborate with projects soon! - Justine
-      </p>
-      <p>
-        Your positive attitude during those late-night debugging sessions was a
-        lifesaver! You kept the team motivated, and we got through it. - Pat
-      </p>
-    </div>
-    <div class="my-picture">
-      <h2>Gallery</h2>
-      <div class="photos">
-        <img src="./images/arashi.png" alt="Arashi" />
-        <img src="./images/crush.jpg" alt="2ne1" />
-        <img src="./images/jisu.jpg" alt="Jisoo" />
-        <img src="./images/blackpink.png" alt="Blackpink" />
-        <img src="./images/LP.jpg" alt="Lighter and Princess" />
-        <img src="./images/babymonster.jpg" alt="Babymonster" />
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Hero Section -->
+    <header class="hero-section" id="about">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-title">Hi there, I'm <span class="highlight">Ma. Bea Mae Ynion</span></h1>
+          <p class="hero-subtitle">Web Developer & Creative Enthusiast</p>
+          <div class="hero-cta">
+            <a href="#contact_me" class="cta-button">Get in Touch</a>
+            <a href="#my_works" class="cta-button secondary">View My Work</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="./images/bae.jpg" alt="Bea Mae Ynion" class="profile-img">
+          <div class="social-links">
+            <a href="mailto:ynion.mabeamae@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="https://facebook.com/beamaeynion08" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://github.com/ynion-mabeamae" target="_blank"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="text-info">
-      <h2>Contact Me</h2>
-      <div class="contact-form">
-        <form class="form-container">
-          <div class="form-grid">
-            <div>
+      <div class="scroll-down">
+        <a href="#interest"><i class="fas fa-chevron-down"></i></a>
+      </div>
+    </header>
+
+    <!-- Main Content Sections -->
+    <main class="main-content">
+      <!-- Interests Section -->
+      <section class="section interest-section" id="interest">
+        <div class="section-header">
+          <h2 class="section-title"><i class="fas fa-heart section-icon"></i> My Interests & Hobbies</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="interest-grid">
+          <div class="interest-card">
+            <div class="interest-icon">
+              <i class="fas fa-music"></i>
+            </div>
+            <h3>Listening to Music</h3>
+            <p>Exploring different genres and discovering new artists</p>
+          </div>
+          <div class="interest-card">
+            <div class="interest-icon">
+              <i class="fas fa-film"></i>
+            </div>
+            <h3>Watching Drama</h3>
+            <p>Enjoying compelling stories and character development</p>
+          </div>
+          <div class="interest-card">
+            <div class="interest-icon">
+              <i class="fas fa-book-open"></i>
+            </div>
+            <h3>Reading Articles</h3>
+            <p>Expanding knowledge through interesting reads</p>
+          </div>
+          <div class="interest-card">
+            <div class="interest-icon">
+              <i class="fas fa-puzzle-piece"></i>
+            </div>
+            <h3>Playing Puzzle & Guitar</h3>
+            <p>Challenging my mind and expressing creativity</p>
+          </div>
+          <div class="interest-card">
+            <div class="interest-icon">
+              <i class="fas fa-dancing"></i>
+            </div>
+            <h3>Dancing</h3>
+            <p>Expressing myself through movement and rhythm</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Works Section -->
+      <section class="section works-section" id="my_works">
+        <div class="section-header">
+          <h2 class="section-title"><i class="fas fa-briefcase section-icon"></i> My Works</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="works-grid">
+          <a href="heybleepi.com" target="_blank" class="work-card">
+            <div class="work-image" style="background-image: url('./images/heybleepi.png');"></div>
+            <div class="work-info">
+              <h3>Heybleepi</h3>
+              <p>Web Application</p>
+              <span class="view-project">View Project <i class="fas fa-arrow-right"></i></span>
+            </div>
+          </a>
+          <a href="./crud_drama/drama.html" target="_blank" class="work-card">
+            <div class="work-image" style="background-image: url('./images/drama.png');"></div>
+            <div class="work-info">
+              <h3>CRUD: DRAMA</h3>
+              <p>Database Application</p>
+              <span class="view-project">View Project <i class="fas fa-arrow-right"></i></span>
+            </div>
+          </a>
+          <a href="./countries/countries.html" target="_blank" class="work-card">
+            <div class="work-image" style="background-image: url('./images/countries.png');"></div>
+            <div class="work-info">
+              <h3>Countries of the World</h3>
+              <p>Educational Resource</p>
+              <span class="view-project">View Project <i class="fas fa-arrow-right"></i></span>
+            </div>
+          </a>
+          <a href="./works/work_a.html" target="_blank" class="work-card">
+            <div class="work-image" style="background-image: url('./images/cobol.png');"></div>
+            <div class="work-info">
+              <h3>CRUD: File Handling COBOL</h3>
+              <p>Programming Project</p>
+              <span class="view-project">View Project <i class="fas fa-arrow-right"></i></span>
+            </div>
+          </a>
+          <a href="./works/work_b.html" target="_blank" class="work-card">
+            <div class="work-image" style="background-image: url('./images/playground.png');"></div>
+            <div class="work-info">
+              <h3>Playground</h3>
+              <p>Interactive Application</p>
+              <span class="view-project">View Project <i class="fas fa-arrow-right"></i></span>
+            </div>
+          </a>
+          <a href="./works/work_c.html" target="_blank" class="work-card">
+            <div class="work-image" style="background-image: url('./images/boxedin.png');"></div>
+            <div class="work-info">
+              <h3>Boxed-In Games</h3>
+              <p>Game Development</p>
+              <span class="view-project">View Project <i class="fas fa-arrow-right"></i></span>
+            </div>
+          </a>
+          <a href="./works/.html" target="_blank" class="work-card">
+            <div class="work-image" style="background-image: url('./images/');"></div>
+            <div class="work-info">
+              <h3>MedAssistant</h3>
+              <p>Hospital Management System</p>
+              <span class="view-project">View Project <i class="fas fa-arrow-right"></i></span>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section class="section testimonials-section" id="testimonials">
+        <div class="section-header">
+          <h2 class="section-title"><i class="fas fa-quote-left section-icon"></i> Testimonials</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="testimonials-container">
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <i class="fas fa-quote-left quote-icon"></i>
+              <p>Your quick thinking and creativity makes the work in web developing much faster, you are a team player.</p>
+              <i class="fas fa-quote-right quote-icon"></i>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-info">
+                <h4>Matthew</h4>
+                <p>Team Member</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <i class="fas fa-quote-left quote-icon"></i>
+              <p>Ma. Bea Mae Ynion is a hardworking student. I like her creativity and ideas with projects. With this website, I hope to know better about her and to collaborate with projects soon!</p>
+              <i class="fas fa-quote-right quote-icon"></i>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-info">
+                <h4>Justine</h4>
+                <p>Team Member</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <i class="fas fa-quote-left quote-icon"></i>
+              <p>Your positive attitude during those late-night debugging sessions was a lifesaver! You kept the team motivated, and we got through it.</p>
+              <i class="fas fa-quote-right quote-icon"></i>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-info">
+                <h4>Pat</h4>
+                <p>Team Member</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery Section -->
+      <section class="section gallery-section" id="gallery">
+        <div class="section-header">
+          <h2 class="section-title"><i class="fas fa-images section-icon"></i> Gallery</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="./images/arashi.png" alt="ARASHI" class="gallery-img">
+            <div class="gallery-overlay">
+              <h3>ARASHI</h3>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="./images/crush.jpg" alt="2NE1" class="gallery-img">
+            <div class="gallery-overlay">
+              <h3>2NE1</h3>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="./images/jisu.jpg" alt="JISOO" class="gallery-img">
+            <div class="gallery-overlay">
+              <h3>JISOO</h3>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="./images/blackpink.png" alt="BLACKPINK" class="gallery-img">
+            <div class="gallery-overlay">
+              <h3>BLACKPINK</h3>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="./images/LP.jpg" alt="Lighter and Princess" class="gallery-img">
+            <div class="gallery-overlay">
+              <h3>Lighter and Princess</h3>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="./images/babymonster.jpg" alt="BABYMONSTER" class="gallery-img">
+            <div class="gallery-overlay">
+              <h3>BABYMONSTER</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+          <form class="contact-form">
+            <div class="form-group">
               <label for="name">Name</label>
-              <input type="text" id="name" name="name" />
+              <input type="text" id="name" name="name" placeholder="Your name" required>
             </div>
-            <div>
+            <div class="form-group">
               <label for="email">Email</label>
-              <input type="email" id="email" name="email" />
+              <input type="email" id="email" name="email" placeholder="Your email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
+            </div>
+            <div class="form-checkbox">
+              <input type="checkbox" id="send_copy" name="send_copy">
+              <label for="send_copy">Send me a copy</label>
+            </div>
+            <button type="submit" class="submit-button">Send Message</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- Goals Section -->
+      <section class="section goals-section" id="my_goals">
+        <div class="section-header">
+          <h2 class="section-title"><i class="fas fa-bullseye section-icon"></i> My Goals</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="goals-container">
+          <div class="goal-card">
+            <div class="goal-number">01</div>
+            <h3>Get a Job</h3>
+            <p>Secure a fulfilling position in web development where I can apply my skills and continue learning.</p>
+          </div>
+          <div class="goal-card">
+            <div class="goal-number">02</div>
+            <h3>Improve My Skills</h3>
+            <p>Continuously enhance my technical abilities and stay updated with industry trends.</p>
+          </div>
+          <div class="goal-card">
+            <div class="goal-number">03</div>
+            <h3>Become Successful</h3>
+            <p>Achieve professional recognition and personal satisfaction in my career.</p>
+          </div>
+          <div class="goal-card">
+            <div class="goal-number">04</div>
+            <h3>Build My Own House</h3>
+            <p>Create a comfortable and inspiring space that reflects my personality and achievements.</p>
+          </div>
+          <div class="goal-card">
+            <div class="goal-number">05</div>
+            <h3>Attend a Concert</h3>
+            <p>Experience the energy of live performances by my favorite artists.</p>
+          </div>
+        </div>
+        
+        <!-- Comment Section -->
+        <div class="comment-section">
+          <h3 class="comment-title">Leave Your Thoughts</h3>
+          <div class="sort-container">
+            <select id="sort_type" onchange="sortComments()">
+              <option value="newest">Newest First</option>
+              <option value="oldest">Oldest First</option>
+            </select>
+          </div>
+          <div class="comment-container" id="comment">
+            <div class="comment">
+              <div class="comment-header">
+                <strong>Arroyo</strong>
+                <span class="comment-date">Today</span>
+              </div>
+              <div class="comment-text">It is a great goal to achieve! Work well.</div>
+            </div>
+            <div class="comment">
+              <div class="comment-header">
+                <strong>Delima</strong>
+                <span class="comment-date">Yesterday</span>
+              </div>
+              <div class="comment-text">I hope you achieve your goals!</div>
+            </div>
+            <div class="comment">
+              <div class="comment-header">
+                <strong>˚ʚ♡ɞ˚Pat</strong>
+                <span class="comment-date">2 days ago</span>
+              </div>
+              <div class="comment-text">𐙚⋆°｡⋆ You're making great progress!</div>
             </div>
           </div>
-          <div>
-            <label for="message">Message</label>
-            <textarea id="message" name="message" cols="30" rows="10">
-            </textarea>
-          </div>
-          <div class="checkbox-container">
-            <input type="checkbox" id="send_copy" />
-            <label for="send_copy">Send me a copy</label>
-          </div>
-          <button type="submit">Submit</button>
-        </form>
-      </div>
-    </div>
-    <section class="my-goals">
-      <h2>My Goals</h2>
-      <ul>
-        <li>To get a job</li>
-        <li>Improve my skills</li>
-        <li>Become successful</li>
-        <li>Build my own house</li>
-        <li>Attend a concert</li>
-      </ul>
-      <div class="comment-info">
-        <h2>Comment Section</h2>
-        <div class="sort-container">
-          <select id="sort_type" onchange="sortComments()">
-            <option value="newest">Newest</option>
-            <option value="oldest">Oldest</option>
-          </select>
-        </div>
-        <div class="comment-container" id="comment">
-          <div class="upper-tags">
-            <div class="user-tag"><strong>Arroyo</strong></div>
-            <div class="user-comment">
-              It is a great goal to achieve! Work well.
+          <form class="comment-form">
+            <div class="form-group">
+              <label for="comment_name">Name</label>
+              <input type="text" id="comment_name" name="name" oninput="validateComment()" required>
             </div>
-          </div>
-          <div class="upper-tags">
-            <div class="user-tag"><strong>Delima</strong></div>
-            <div class="user-comment">I hope you achieve your goals!</div>
-          </div>
-          <div class="upper-tags">
-            <div class="user-tag"><strong>˚ʚ♡ɞ˚Pat</strong></div>
-            <div class="user-comment">𐙚⋆°｡⋆ You're making great progress!</div>
-          </div>
+            <div class="form-group">
+              <label for="comment_text">Comment</label>
+              <textarea id="comment_text" name="comment" rows="3" oninput="validateComment()" required></textarea>
+            </div>
+            <button type="button" id="comment_button" onclick="addComment()" disabled>Add Comment</button>
+          </form>
         </div>
-        <h3>Add a comment</h3>
-        <form class="comment-form">
-          <div>
-            <label for="comment_name">Name</label>
-            <input
-              type="text"
-              name="name"
-              id="comment_name"
-              oninput="validateComment()"
-            />
-          </div>
-          <div>
-            <label for="comment_text">Comment</label>
-            <textarea
-              name="comment"
-              id="comment_text"
-              rows="10"
-              cols="50"
-              placeholder="Type your comment here..."
-              oninput="validateComment()"
-            ></textarea>
-          </div>
-          <button
-            id="comment_button"
-            type="button"
-            onclick="addComment()"
-            disabled
-          >
-            Comment
-          </button>
-        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-main">
+        <span>&copy; 2025 Ynion, Ma. Bea Mae | Portfolio Website</span>
       </div>
-    </section>
+      <div class="footer-social">
+        Connect with me:
+        <a href="mailto:your.email@example.com" title="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://facebook.com/" target="_blank" title="Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://github.com/" target="_blank" title="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </footer>
+
     <script src="script.js"></script>
   </body>
 </html>
